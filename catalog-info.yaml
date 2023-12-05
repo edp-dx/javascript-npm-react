@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.name | dump }}
+  description: ${{ values.name | dump }}
+spec:
+  type: library
+  owner: user:guest
+  lifecycle: ${ENV}
